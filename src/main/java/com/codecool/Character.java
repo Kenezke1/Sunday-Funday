@@ -1,6 +1,6 @@
 package com.codecool;
 
-public abstract class Character {
+public class Character {
 
     private String name;
     private Hero hero;
@@ -53,8 +53,6 @@ public abstract class Character {
     public boolean isAlive() {
         return health > 0;
     }
-
-    protected abstract void fight(Character attacker) throws FightException;
 
     protected void takeDamage(int damageTaken) {
         System.out.println("He?" + this + ", damageTaken=" + damageTaken);
